@@ -72,3 +72,32 @@ print("\n")
 print(sum_columns)
 
 print("Max:", max(sum_columns))
+
+
+print("\nSorted by row sum:")
+for row in sorted_T:
+    print(row, "Сумма: ", sum(row))
+
+print("\n")
+
+sum_columns = []
+
+for i in range(M):
+    sum_columns.append(0)
+
+print(sum_columns)
+min_j = 0
+for row in sorted_T:
+    min_el = 999
+    for j in range(M):
+        min_j = find_min_index(row)
+        min_el = min(row)
+    print(min_j)
+    sum_columns[min_j] += min_el
+    print(sum_columns)
+
+print("\n")
+
+print(sum_columns)
+
+print("Max:", max(sum_columns))
