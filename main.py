@@ -9,6 +9,7 @@ T = [[0] * M for _ in range(N)]
 a = int(input("Enter value from: "))
 b = int(input("Enter value to: "))
 
+
 sum_columns = []
 
 for i in range(M):
