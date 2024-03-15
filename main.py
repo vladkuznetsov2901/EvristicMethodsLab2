@@ -9,7 +9,6 @@ T = [[0] * M for _ in range(N)]
 a = int(input("Enter value from: "))
 b = int(input("Enter value to: "))
 
-
 sum_columns = []
 
 for i in range(M):
@@ -25,7 +24,6 @@ for row in T:
 sorted_T = sorted(T, key=lambda x: sum(x), reverse=True)
 
 print("########################################################")
-
 
 print("\nSorted down by row sum:")
 for row in sorted_T:
@@ -77,12 +75,12 @@ print(sum_columns)
 
 print("Max:", max(sum_columns))
 
-print("\nSorted by row sum:")
-for row in sorted_T:
-    print(row, "Сумма: ", sum(row))
-
 print("\n")
 print("########################################################")
+sum_columns = []
+
+for i in range(M):
+    sum_columns.append(0)
 sorted_T = sorted(T, key=lambda x: sum(x), reverse=False)
 
 print("\nSorted up by row sum:")
@@ -135,13 +133,13 @@ print(sum_columns)
 
 print("Max:", max(sum_columns))
 
-print("\nSorted by row sum:")
-for row in sorted_T:
-    print(row, "Сумма: ", sum(row))
-
 print("\n")
 
 print("########################################################")
+sum_columns = []
+
+for i in range(M):
+    sum_columns.append(0)
 sorted_T = T
 
 print("\nUnSorted by row sum:")
@@ -194,9 +192,9 @@ print(sum_columns)
 
 print("Max:", max(sum_columns))
 
-print("\nSorted by row sum:")
-for row in sorted_T:
-    print(row, "Сумма: ", sum(row))
+# print("\nSorted by row sum:")
+# for row in sorted_T:
+#     print(row, "Сумма: ", sum(row))
 
 print("\n")
 
